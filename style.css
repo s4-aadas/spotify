@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background-color 0.3s;
+}
+
+.navbar .btn:hover {
+    background-color: #0056b3;
+}
+
+.cover {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navi {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle .singles-btn, .toggle .artists-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle .singles-btn:hover, .toggle .artists-btn:hover {
+    background-color: #0056b3;
+}
+
+.API .list {
+    margin-top: 20px;
+}
+
+.API .results li {
+    display: flex;
+    align-items: center; /* Centers the items vertically */
+    justify-content: start; /* Aligns items to the start of the container */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.API .results img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+/* Text styling */
+.API .results .song-info {
+    display: flex;
+    flex-direction: column; /* Organizes the song info in a column */
+    justify-content: center; /* If you want to center the text next to the image */
+}
+
+/* Additional styling for the link to ensure it is displayed as a block if it is an <a> element */
+.API .results a {
+    display: block;
+    margin-top: 10px; /* Adds a little space above the link */
+}
